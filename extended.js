@@ -21,3 +21,7 @@ String.prototype.toUCFirst = function () {
 String.IsNullOrEmpty = (value) => value === null || value.IsEmpty;
 
 String.Empty = "";
+
+Number.prototype.toFixedNum = function (fractionDigits) {
+    return Number(this.toFixed(fractionDigits));
+};
